@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.alz_jaime.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.alz_jaime.ui.gallery.GalleryFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.alz_jaime.ui.slideshow.SlideshowFragment"
+        android:label="Alarmas"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/MCR"
+        android:name="com.example.alz_jaime.MCR"
+        android:label="Medicamento con receta"
+        tools:layout="@layout/fragment_m_c_r" />
+    <fragment
+        android:id="@+id/MSR"
+        android:name="com.example.alz_jaime.MSR"
+        android:label="Medicamento sin receta"
+        tools:layout="@layout/fragment_m_s_r" />
+</navigation>
